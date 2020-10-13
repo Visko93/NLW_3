@@ -1,0 +1,39 @@
+:root {
+  --ff-primary: 'Nunito', sans-serif;
+
+  --fw-regular: 400;
+  --fw-semiBold: 600;
+  --fw-black: 900;
+  --fc-primary: #ffffff;
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--fc-primary);
+  font-family: var(--ff-primary);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  padding: 1em;
+  width: 100%;
+  max-width: 1100px;
+}
