@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { MdAdd } from 'react-icons/md'
+import { Map, TileLayer } from 'react-leaflet'
 
 import mapMarker from '../../assets/png/logo_1x.png'
+import '../../styles/pages/map.css'
+import 'leaflet/dist/leaflet.css'
 
 function Mapa() {
   return (
@@ -21,7 +24,15 @@ function Mapa() {
         </footer>
       </aside>
 
-      <div></div>
+      <Map
+        center={[-25.539203, -49.2740054]}
+        zoom={15}
+        style={{ width: '100%', height: '100%' }}
+      >
+        <TileLayer
+          url={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAP_KEY}`}
+        />
+      </Map>
 
       <Link to="/dados" className="create-ophanage">
         <MdAdd size={32} />

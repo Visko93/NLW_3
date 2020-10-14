@@ -4,7 +4,6 @@ import Routes from './routes'
 
 import './styles/global.styles.css'
 import './styles/pages/home.css'
-import './styles/pages/map.css'
 
 function App() {
   return (
